@@ -12,6 +12,7 @@ import ProfilePage from "views/ProfilePage/ProfilePage.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 import MyndsetPage from "views/MyndsetPage/MyndsetPage";
 import SafenetPage from "views/SafenetPage/SafenetPage";
+import SmartbrainPage from "views/SmartbrainPage/SmartbrainPage";
 
 var hist = createBrowserHistory();
 
@@ -23,6 +24,7 @@ ReactDOM.render(
       <Route path="/login-page" component={LoginPage} />
       <Route path="/projects/myndset" component={MyndsetPage} />
       <Route path="/projects/safenet" component={SafenetPage} />
+      <Route path="/projects/smartbrain" component={SmartbrainPage} />
       <Route path="/" component={Components} />
     </Switch>
   </Router>,

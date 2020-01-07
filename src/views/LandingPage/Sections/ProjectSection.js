@@ -16,6 +16,10 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/proj
 import myndset from "assets/img/projects/myndset/myndset1.jpg";
 import safenet from "assets/img/projects/safenet/safenet1.1.jpg";
 import dancefest from "assets/img/projects/dancefest/dancefest3.jpg";
+import smartbrain from "assets/img/projects/smartbrain/smartbrain1-min.jpg";
+import recycleRight from "assets/img/projects/recycleRight/recycleRight1-min.jpg";
+import waterlooRush from "assets/img/projects/waterlooRush/waterlooRush1-min.png";
+import travelwise from "assets/img/projects/travelwise/travelwise1-min.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -49,6 +53,20 @@ export default function ProjectSection() {
                 A chrome extension that protects children on the browsing the
                 internet.
               </p>
+              <Button color="info" size="sm" href="/projects/safenet">
+                Learn More
+              </Button>
+            </div>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={6}>
+            <img src={dancefest} alt="Dancefest" className={imageClasses} />
+            <div className={classes.imgCardOverlay}>
+              <h3 className={classes.overlayTitle}>Dancefest</h3>
+              <br />
+              <p className={classes.overlayTitle}>
+                An admin portal which manages the adjudications for the Ontario
+                Dancefest
+              </p>
               <Button
                 color="info"
                 size="sm"
@@ -61,21 +79,68 @@ export default function ProjectSection() {
             </div>
           </GridItem>
           <GridItem xs={12} sm={12} md={6}>
-            <img src={dancefest} alt="Safe.net" className={imageClasses} />
+            <img
+              src={travelwise}
+              alt="Waterloo Rush"
+              className={imageClasses}
+            />
             <div className={classes.imgCardOverlay}>
-              <h3 className={classes.overlayTitle}>Safe.net</h3>
+              <h3 className={classes.overlayTitle}>Recycle Right</h3>
               <br />
               <p className={classes.overlayTitle}>
-                A chrome extension that protects children on the browsing the
-                internet.
+                A mobile app that identifies if an item is recycling, compost,
+                or landfill.
               </p>
-              <Button
-                color="info"
-                size="sm"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Button color="info" size="sm" href="/projects/recycleRight">
+                Learn More
+              </Button>
+            </div>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <img src={smartbrain} alt="Smartbrain" className={imageClasses} />
+            <div className={classes.imgCardOverlay}>
+              <h3 className={classes.overlayTitle}>Smartbrain</h3>
+              <br />
+              <p className={classes.overlayTitle}>
+                A full stack application which detects human faces in photos.
+              </p>
+              <Button color="info" size="sm" href="/projects/smartbrain">
+                Learn More
+              </Button>
+            </div>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <img
+              src={recycleRight}
+              alt="Recycle Right"
+              className={imageClasses}
+            />
+            <div className={classes.imgCardOverlay}>
+              <h3 className={classes.overlayTitle}>Recycle Right</h3>
+              <br />
+              <p className={classes.overlayTitle}>
+                A mobile app that identifies if an item is recycling, compost,
+                or landfill.
+              </p>
+              <Button color="info" size="sm" href="/projects/recycleRight">
+                Learn More
+              </Button>
+            </div>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <img
+              src={waterlooRush}
+              alt="Waterloo Rush"
+              className={imageClasses}
+            />
+            <div className={classes.imgCardOverlay}>
+              <h3 className={classes.overlayTitle}>Recycle Right</h3>
+              <br />
+              <p className={classes.overlayTitle}>
+                A mobile app that identifies if an item is recycling, compost,
+                or landfill.
+              </p>
+              <Button color="info" size="sm" href="/projects/recycleRight">
                 Learn More
               </Button>
             </div>

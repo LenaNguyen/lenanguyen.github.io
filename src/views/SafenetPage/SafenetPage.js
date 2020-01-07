@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectTemplate from "views/Templates/ProjectTemplate.js";
-import image1 from "assets/img/projects/myndset/myndset2.jpg";
-import image2 from "assets/img/projects/myndset/myndset3.jpg";
+import image1 from "assets/img/projects/safenet/safenet2.jpg";
+import image2 from "assets/img/projects/safenet/safenet3.jpg";
 
 export default function SafenetPage() {
   const description = `Safe.net aims to increase the security of children on the internet. 
@@ -12,8 +12,7 @@ export default function SafenetPage() {
   site their child is trying to access. They also have the option of creating a block list, 
   which will block access to the listed websites.`;
 
-  const techStack =
-    "React, Node.js, Google APIs, Firestore, Vanilla JavaScript";
+  const techStack = "React, Node.js, Google APIs, Firestore, JavaScript";
 
   const mediaList = [
     <div key={0}>
@@ -26,7 +25,7 @@ export default function SafenetPage() {
   return (
     <ProjectTemplate
       title="Safe.net"
-      backgroundImage={require("assets/img/bg5.jpg")}
+      backgroundImage={require("assets/img/bg8-min.jpg")}
       sourceCodeLink="https://github.com/LenaNguyen/Myndset"
       description={description}
       techStack={techStack}

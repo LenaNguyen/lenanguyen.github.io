@@ -17,9 +17,6 @@ import Parallax from "components/Parallax/Parallax.js";
 import IconButton from "components/IconButton/IconButton.js";
 import Card from "components/Card/Card.js";
 
-import image1 from "assets/img/projects/myndset/myndset2.jpg";
-import image2 from "assets/img/projects/myndset/myndset3.jpg";
-
 import styles from "assets/jss/material-kit-react/views/templates/projectTemplate.js";
 
 const useStyles = makeStyles(styles);
@@ -33,6 +30,7 @@ export default function ProjectTemplate(props) {
     description,
     techStack,
     mediaList,
+    children,
     ...rest
   } = props;
 
@@ -83,14 +81,13 @@ export default function ProjectTemplate(props) {
                 <GitHub />
               </IconButton>
             </div>
-            <div className={classes.description}>
+            <div
+              className={classNames(classes.description, classes.centerText)}
+            >
               <p>{description}</p>
               <br />
               <h3>Tech Stack</h3>
-              <p>
-                React, Node.js, Firestore, Vioceflow, DialogFlow, Microsoft
-                Azure
-              </p>
+              <p>{techStack}</p>
             </div>
           </div>
         </div>
@@ -101,6 +98,7 @@ export default function ProjectTemplate(props) {
             </Card>
           </GridItem>
         </GridContainer>
+        <div className={classes.description}>{children}</div>
       </div>
     </div>
   );
