@@ -15,7 +15,7 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/proj
 
 import myndset from "assets/img/projects/myndset/myndset1.jpg";
 import safenet from "assets/img/projects/safenet/safenet1.1.jpg";
-import dancefest from "assets/img/projects/dancefest/dancefest3.jpg";
+import dancefest from "assets/img/projects/dancefest/dancefest1.jpg";
 import smartbrain from "assets/img/projects/smartbrain/smartbrain1-min.jpg";
 import recycleRight from "assets/img/projects/recycleRight/recycleRight1-min.jpg";
 import waterlooRush from "assets/img/projects/waterlooRush/waterlooRush1-min.png";
@@ -35,7 +35,6 @@ export default function ProjectSection() {
             <img src={myndset} alt="Myndset" className={imageClasses} />
             <div className={classes.imgCardOverlay}>
               <h3 className={classes.overlayTitle}>Myndset</h3>
-              <br />
               <p className={classes.overlayTitle}>
                 A digital mood journal that predicts your emotions.
               </p>
@@ -48,7 +47,6 @@ export default function ProjectSection() {
             <img src={safenet} alt="Safe.net" className={imageClasses} />
             <div className={classes.imgCardOverlay}>
               <h3 className={classes.overlayTitle}>Safe.net</h3>
-              <br />
               <p className={classes.overlayTitle}>
                 A chrome extension that protects children on the browsing the
                 internet.
@@ -62,7 +60,6 @@ export default function ProjectSection() {
             <img src={dancefest} alt="Dancefest" className={imageClasses} />
             <div className={classes.imgCardOverlay}>
               <h3 className={classes.overlayTitle}>Dancefest</h3>
-              <br />
               <p className={classes.overlayTitle}>
                 An admin portal which manages the adjudications for the Ontario
                 Dancefest
@@ -79,19 +76,15 @@ export default function ProjectSection() {
             </div>
           </GridItem>
           <GridItem xs={12} sm={12} md={6}>
-            <img
-              src={travelwise}
-              alt="Waterloo Rush"
-              className={imageClasses}
-            />
+            <img src={travelwise} alt="Travelwise" className={imageClasses} />
             <div className={classes.imgCardOverlay}>
-              <h3 className={classes.overlayTitle}>Recycle Right</h3>
-              <br />
+              <h3 className={classes.overlayTitle}>Travelwise</h3>
               <p className={classes.overlayTitle}>
-                A mobile app that identifies if an item is recycling, compost,
-                or landfill.
+                A web app that keeps track of points, news, and documents
+                between companies participating in the sustainable
+                transportation initiative.
               </p>
-              <Button color="info" size="sm" href="/projects/recycleRight">
+              <Button color="info" size="sm" href="/projects/travelwise">
                 Learn More
               </Button>
             </div>
@@ -100,7 +93,6 @@ export default function ProjectSection() {
             <img src={smartbrain} alt="Smartbrain" className={imageClasses} />
             <div className={classes.imgCardOverlay}>
               <h3 className={classes.overlayTitle}>Smartbrain</h3>
-              <br />
               <p className={classes.overlayTitle}>
                 A full stack application which detects human faces in photos.
               </p>
@@ -117,7 +109,6 @@ export default function ProjectSection() {
             />
             <div className={classes.imgCardOverlay}>
               <h3 className={classes.overlayTitle}>Recycle Right</h3>
-              <br />
               <p className={classes.overlayTitle}>
                 A mobile app that identifies if an item is recycling, compost,
                 or landfill.
@@ -134,13 +125,12 @@ export default function ProjectSection() {
               className={imageClasses}
             />
             <div className={classes.imgCardOverlay}>
-              <h3 className={classes.overlayTitle}>Recycle Right</h3>
-              <br />
+              <h3 className={classes.overlayTitle}>Waterloo Rush</h3>
               <p className={classes.overlayTitle}>
-                A mobile app that identifies if an item is recycling, compost,
-                or landfill.
+                An inifnite runner game that follows a student through the
+                hectic hallways of the University of Waterloo.
               </p>
-              <Button color="info" size="sm" href="/projects/recycleRight">
+              <Button color="info" size="sm" href="/projects/waterlooRush">
                 Learn More
               </Button>
             </div>

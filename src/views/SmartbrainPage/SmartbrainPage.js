@@ -10,7 +10,7 @@ import styles from "assets/jss/material-kit-react/views/templates/projectTemplat
 
 const useStyles = makeStyles(styles);
 
-export default function SafenetPage() {
+export default function SmartbrainPage() {
   const classes = useStyles();
   const description =
     "SmartBrain is a full stack web application that utilizes a facial recognition API from Clarifai to render a box around human faces in a given photo. It tracks account information, which includes the number of photos successfully analyzed by the API. The application also contains error notifications for when invalid information is supplied.";

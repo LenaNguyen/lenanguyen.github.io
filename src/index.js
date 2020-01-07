@@ -13,19 +13,21 @@ import LoginPage from "views/LoginPage/LoginPage.js";
 import MyndsetPage from "views/MyndsetPage/MyndsetPage";
 import SafenetPage from "views/SafenetPage/SafenetPage";
 import SmartbrainPage from "views/SmartbrainPage/SmartbrainPage";
+import DancefestPage from "views/DancefestPage/DancefestPage";
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/landing-page" component={LandingPage} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/projects/myndset" component={MyndsetPage} />
       <Route path="/projects/safenet" component={SafenetPage} />
       <Route path="/projects/smartbrain" component={SmartbrainPage} />
-      <Route path="/" component={Components} />
+      <Route path="/projects/dancefest" component={DancefestPage} />
+      <Route path="/components" component={Components} />
+      <Route path="/" component={LandingPage} />
     </Switch>
   </Router>,
   document.getElementById("root")

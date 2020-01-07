@@ -66,7 +66,7 @@ export default function ProjectTemplate(props) {
               style={{ flexDirection: "column" }}
             >
               <div className={classes.profile}>
-                <h2 className={classes.title}>{title}</h2>
+                <h1 className={classes.title}>{title}</h1>
               </div>
               <IconButton
                 justIcon

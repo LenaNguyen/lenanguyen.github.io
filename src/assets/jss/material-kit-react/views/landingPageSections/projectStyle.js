@@ -11,7 +11,8 @@ const { imgCardOverlay, imgFluid, ...imageStylesRest } = imagesStyle;
 let overlayTitle = {
   ...cardTitle,
   color: whiteColor,
-  transition: "all 0.5s linear 0s"
+  transition: "all 0.5s linear 0s",
+  margin: 0
 };
 
 export default {

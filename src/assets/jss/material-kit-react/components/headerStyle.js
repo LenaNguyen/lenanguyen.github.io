@@ -9,7 +9,8 @@ import {
   roseColor,
   transition,
   boxShadow,
-  drawerWidth
+  drawerWidth,
+  darkNavyColor
 } from "assets/jss/material-kit-react.js";
 
 const headerStyle = {
@@ -112,7 +113,7 @@ const headerStyle = {
   },
   dark: {
     color: "#FFFFFF",
-    backgroundColor: "#212121 !important",
+    backgroundColor: darkNavyColor,
     boxShadow:
       "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46)"
   },
