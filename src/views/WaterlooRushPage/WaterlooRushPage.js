@@ -31,7 +31,7 @@ export default function RecycleRightPage() {
   return (
     <ProjectTemplate
       title="Waterloo Rush"
-      backgroundImage={require("assets/img/bg8-min.jpg")}
+      backgroundImage={require("assets/img/bg13-min.jpg")}
       sourceCodeLink="https://github.com/LenaNguyen/WaterlooRush"
       description={description}
       techStack={techStack}

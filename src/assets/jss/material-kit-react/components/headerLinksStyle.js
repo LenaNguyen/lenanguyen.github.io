@@ -1,4 +1,4 @@
-import { defaultFont } from "assets/jss/material-kit-react.js";
+import { defaultFont, whiteColor } from "assets/jss/material-kit-react.js";
 
 import tooltip from "assets/jss/material-kit-react/tooltipsStyle.js";
 
@@ -15,7 +15,7 @@ const headerLinksStyle = theme => ({
   },
   listItem: {
     float: "left",
-    color: "inherit",
+    color: whiteColor,
     position: "relative",
     display: "block",
     width: "auto",
@@ -37,7 +37,7 @@ const headerLinksStyle = theme => ({
     padding: "0 !important"
   },
   navLink: {
-    color: "inherit",
+    color: whiteColor,
     position: "relative",
     padding: "0.9375rem",
     fontWeight: "400",

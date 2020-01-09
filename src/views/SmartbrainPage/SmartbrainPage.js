@@ -31,7 +31,7 @@ export default function SmartbrainPage() {
   return (
     <ProjectTemplate
       title="Smartbrain"
-      backgroundImage={require("assets/img/bg9-min.jpg")}
+      backgroundImage={require("assets/img/bg11-min.jpg")}
       sourceCodeLink="https://github.com/LenaNguyen/SmartBrain"
       description={description}
       techStack={techStack}

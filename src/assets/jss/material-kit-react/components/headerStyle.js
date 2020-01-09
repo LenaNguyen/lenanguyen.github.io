@@ -56,6 +56,7 @@ const headerStyle = {
     ...defaultFont,
     lineHeight: "25px",
     fontSize: "1.5rem",
+    fontFamily: "'Vibur', cursive",
     borderRadius: "3px",
     textTransform: "none",
     color: "inherit",
@@ -146,7 +147,8 @@ const headerStyle = {
     textAlign: "left",
     paddingRight: "0px",
     paddingLeft: "0",
-    ...transition
+    ...transition,
+    backgroundColor: darkNavyColor
   }
 };
 

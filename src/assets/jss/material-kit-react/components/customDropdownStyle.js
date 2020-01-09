@@ -11,7 +11,9 @@ import {
   dangerColor,
   dangerBoxShadow,
   roseColor,
-  roseBoxShadow
+  roseBoxShadow,
+  navyColor,
+  whiteColor
 } from "assets/jss/material-kit-react.js";
 
 const customDropdownStyle = theme => ({
@@ -30,7 +32,7 @@ const customDropdownStyle = theme => ({
     fontSize: "14px",
     textAlign: "left",
     listStyle: "none",
-    backgroundColor: "#fff",
+    backgroundColor: navyColor,
     backgroundClip: "padding-box"
   },
   menuList: {
@@ -62,7 +64,7 @@ const customDropdownStyle = theme => ({
     clear: "both",
     fontWeight: "400",
     height: "fit-content",
-    color: "#333",
+    color: whiteColor,
     whiteSpace: "nowrap",
     minHeight: "unset"
   },

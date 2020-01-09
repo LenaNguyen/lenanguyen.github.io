@@ -30,8 +30,7 @@ export default function ProjectTemplate(props) {
     description,
     techStack,
     mediaList,
-    children,
-    ...rest
+    children
   } = props;
 
   const settings = {
@@ -46,17 +45,6 @@ export default function ProjectTemplate(props) {
 
   return (
     <div>
-      <Header
-        color="transparent"
-        brand="Material Kit React"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 200,
-          color: "dark"
-        }}
-        {...rest}
-      />
       <Parallax small filter image={backgroundImage} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>

@@ -32,7 +32,7 @@ export default function SafenetPage() {
   return (
     <ProjectTemplate
       title="Safe.net"
-      backgroundImage={require("assets/img/bg8-min.jpg")}
+      backgroundImage={require("assets/img/bg10-min.jpg")}
       sourceCodeLink="https://github.com/LenaNguyen/Myndset"
       description={description}
       techStack={techStack}

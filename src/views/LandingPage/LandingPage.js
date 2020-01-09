@@ -1,14 +1,12 @@
 import React from "react";
 import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
+import { HashLink as Link } from "react-router-hash-link";
 
 // core components
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
@@ -17,27 +15,12 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import AboutSection from "./Sections/AboutSection";
 import ProjectSection from "./Sections/ProjectSection";
 
-const dashboardRoutes = [];
-
 const useStyles = makeStyles(styles);
 
-export default function LandingPage(props) {
+export default function LandingPage() {
   const classes = useStyles();
-  const { ...rest } = props;
   return (
     <div>
-      <Header
-        color="transparent"
-        routes={dashboardRoutes}
-        brand="Lena Nguyen"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 450,
-          color: "dark"
-        }}
-        {...rest}
-      />
       <Parallax
         filter
         image={require("assets/img/bg5.jpg")}
@@ -56,13 +39,7 @@ export default function LandingPage(props) {
                 projects. Feel free to look around.
               </h4>
               <br />
-              <Button
-                color="rose"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Button color="rose" size="lg" to="/#about" component={Link}>
                 Get To Know Me
               </Button>
             </GridItem>

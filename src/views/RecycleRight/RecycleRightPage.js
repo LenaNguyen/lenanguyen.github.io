@@ -25,7 +25,7 @@ export default function RecycleRightPage() {
   return (
     <ProjectTemplate
       title="Recycle Right"
-      backgroundImage={require("assets/img/bg8-min.jpg")}
+      backgroundImage={require("assets/img/bg9-min.jpg")}
       sourceCodeLink="https://github.com/LenaNguyen/RecycleRight"
       description={description}
       techStack={techStack}

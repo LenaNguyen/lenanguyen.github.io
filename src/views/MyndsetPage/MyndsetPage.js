@@ -26,7 +26,7 @@ export default function MyndsetPage() {
   return (
     <ProjectTemplate
       title="Myndset"
-      backgroundImage={require("assets/img/bg5.jpg")}
+      backgroundImage={require("assets/img/bg13-min.jpg")}
       sourceCodeLink="https://github.com/LenaNguyen/Myndset"
       description={description}
       techStack={techStack}
