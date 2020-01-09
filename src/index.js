@@ -14,6 +14,9 @@ import MyndsetPage from "views/MyndsetPage/MyndsetPage";
 import SafenetPage from "views/SafenetPage/SafenetPage";
 import SmartbrainPage from "views/SmartbrainPage/SmartbrainPage";
 import DancefestPage from "views/DancefestPage/DancefestPage";
+import TravelwisePage from "views/TravelwisePage/TravelwisePage";
+import RecycleRightPage from "views/RecycleRight/RecycleRightPage";
+import WaterlooRushPage from "views/WaterlooRushPage/WaterlooRushPage";
 
 var hist = createBrowserHistory();
 
@@ -26,6 +29,9 @@ ReactDOM.render(
       <Route path="/projects/safenet" component={SafenetPage} />
       <Route path="/projects/smartbrain" component={SmartbrainPage} />
       <Route path="/projects/dancefest" component={DancefestPage} />
+      <Route path="/projects/travelwise" component={TravelwisePage} />
+      <Route path="/projects/recycleRight" component={RecycleRightPage} />
+      <Route path="/projects/waterlooRush" component={WaterlooRushPage} />
       <Route path="/components" component={Components} />
       <Route path="/" component={LandingPage} />
     </Switch>

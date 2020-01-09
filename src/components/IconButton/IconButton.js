@@ -1,7 +1,6 @@
 import React from "react";
 import Tooltip from "@material-ui/core/Tooltip";
 
-import GridItem from "components/Grid/GridItem.js";
 import PropTypes from "prop-types";
 import Button from "components/CustomButtons/Button.js";
 
@@ -15,7 +14,7 @@ const IconButton = function IconButton({
   const rel = target === "_blank" ? "noopener noreferrer" : null;
   return (
     <Tooltip id={id} title={title} placement="top">
-      <Button size="lg" rel={rel} justIcon {...rest}>
+      <Button size="lg" rel={rel} justIcon target={target} {...rest}>
         {children}
       </Button>
     </Tooltip>

@@ -44,6 +44,7 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
+      document.getElementById("brand").classList.add("glow");
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -51,6 +52,7 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
+      document.getElementById("brand").classList.remove("glow");
     }
   };
   const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
@@ -60,7 +62,11 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent = (
+    <Button id="brand" className={classNames(classes.title)}>
+      {brand}
+    </Button>
+  );
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>

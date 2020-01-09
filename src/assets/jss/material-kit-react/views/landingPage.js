@@ -34,6 +34,9 @@ const landingPageStyle = {
   fullView: {
     height: "100vh",
     width: "100%"
+  },
+  px: {
+    padding: "0 1rem"
   }
 };
 

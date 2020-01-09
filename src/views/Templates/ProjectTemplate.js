@@ -53,7 +53,7 @@ export default function ProjectTemplate(props) {
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "white"
+          color: "dark"
         }}
         {...rest}
       />
@@ -75,6 +75,7 @@ export default function ProjectTemplate(props) {
                 color="github"
                 href={sourceCodeLink}
                 target="_blank"
+                rel="noopener noreferrer"
                 xs={3}
                 sm={1}
               >
@@ -86,14 +87,14 @@ export default function ProjectTemplate(props) {
             >
               <p>{description}</p>
               <br />
-              <h3>Tech Stack</h3>
+              <h2>Tech Stack</h2>
               <p>{techStack}</p>
             </div>
           </div>
         </div>
         <GridContainer className={classes.container}>
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
-            <Card carousel>
+            <Card carousel plain>
               <Carousel {...settings}>{mediaList}</Carousel>
             </Card>
           </GridItem>

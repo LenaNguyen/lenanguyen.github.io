@@ -3,9 +3,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 import ProjectTemplate from "views/Templates/ProjectTemplate.js";
-import image1 from "assets/img/projects/dancefest/dancefest2.jpg";
-import image2 from "assets/img/projects/dancefest/dancefest3.jpg";
-import image3 from "assets/img/projects/dancefest/dancefest4.jpg";
+import image1 from "assets/img/projects/dancefest/dancefest2-min.jpg";
+import image2 from "assets/img/projects/dancefest/dancefest3-min.jpg";
+import image3 from "assets/img/projects/dancefest/dancefest4-min.jpg";
 
 import styles from "assets/jss/material-kit-react/views/templates/projectTemplate.js";
 
@@ -22,13 +22,13 @@ export default function DancefestPage() {
 
   const mediaList = [
     <div key={0}>
-      <img src={image1} alt="Landing Page" className="slick-image" />
+      <img src={image1} alt="Awards Considerations" className="slick-image" />
     </div>,
     <div key={1}>
-      <img src={image2} alt="yearly view" className="slick-image" />
+      <img src={image3} alt="Performance List" className="slick-image" />
     </div>,
     <div key={2}>
-      <img src={image3} alt="yearly view" className="slick-image" />
+      <img src={image2} alt="Performance Filters" className="slick-image" />
     </div>
   ];
   return (

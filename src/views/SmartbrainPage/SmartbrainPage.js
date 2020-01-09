@@ -3,8 +3,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 import ProjectTemplate from "views/Templates/ProjectTemplate.js";
-import image1 from "assets/video/projects/smartbrain/smartbrain.mp4";
-import image2 from "assets/img/projects/smartbrain/smartbrain2-min.jpg";
+import video1 from "assets/video/projects/smartbrain/smartbrain.mp4";
 
 import styles from "assets/jss/material-kit-react/views/templates/projectTemplate.js";
 
@@ -19,17 +18,21 @@ export default function SmartbrainPage() {
 
   const mediaList = [
     <div key={0}>
-      <video autoPlay muted loop src={image1} className="slick-image"></video>
-    </div>,
-    <div key={1}>
-      <img src={image2} alt="yearly view" className="slick-image" />
+      <video
+        autoPlay
+        muted
+        loop
+        alt="SmartBrain Demo"
+        src={video1}
+        className="slick-image"
+      ></video>
     </div>
   ];
   return (
     <ProjectTemplate
       title="Smartbrain"
       backgroundImage={require("assets/img/bg9-min.jpg")}
-      sourceCodeLink="https://github.com/LenaNguyen/Myndset"
+      sourceCodeLink="https://github.com/LenaNguyen/SmartBrain"
       description={description}
       techStack={techStack}
       mediaList={mediaList}

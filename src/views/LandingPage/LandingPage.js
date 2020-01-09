@@ -1,10 +1,6 @@
 import React from "react";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
-// @material-ui/icons
 
 // core components
 import Header from "components/Header/Header.js";
@@ -33,11 +29,11 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="Lena Nguyen"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 450,
           color: "dark"
         }}
         {...rest}
@@ -49,8 +45,10 @@ export default function LandingPage(props) {
       >
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Hey there! I&apos;m Lena.</h1>
+            <GridItem xs={12} sm={12} md={6} className={classes.px}>
+              <h1 className={classNames(classes.title, "glow")}>
+                Hey there! I&apos;m Lena.
+              </h1>
               <h4>
                 Thanks for checking out my website! I am a software developer,
                 currently studying Systems Design Engineering at the University

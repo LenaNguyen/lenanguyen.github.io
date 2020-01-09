@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectTemplate from "views/Templates/ProjectTemplate.js";
-import image1 from "assets/img/projects/myndset/myndset2.jpg";
-import image2 from "assets/img/projects/myndset/myndset3.jpg";
+import image1 from "assets/img/projects/myndset/myndset2-min.jpg";
+import image2 from "assets/img/projects/myndset/myndset3-min.jpg";
 
 export default function MyndsetPage() {
   const description = ` Myndset is a digital mood journal that integrates with your

@@ -1,10 +1,7 @@
 import React from "react";
 import ProjectTemplate from "views/Templates/ProjectTemplate.js";
 import image1 from "assets/img/projects/safenet/safenet2.jpg";
-import image2 from "assets/img/projects/safenet/safenet3.jpg";
-import image3 from "assets/img/projects/safenet/safenet4.jpg";
-import image4 from "assets/img/projects/safenet/safenet5.jpg";
-import image5 from "assets/img/projects/safenet/safenet6.jpg";
+import video1 from "assets/video/projects/safenet/safenet1.mp4";
 
 export default function SafenetPage() {
   const description = `Safe.net aims to increase the security of children on the internet. 
@@ -19,19 +16,17 @@ export default function SafenetPage() {
 
   const mediaList = [
     <div key={0}>
-      <img src={image1} alt="Landing Page" className="slick-image" />
+      <video
+        autoPlay
+        muted
+        loop
+        src={video1}
+        alt="Safe.net Demo"
+        className="slick-image"
+      />
     </div>,
     <div key={4}>
-      <img src={image5} alt="yearly view" className="slick-image" />
-    </div>,
-    <div key={1}>
-      <img src={image2} alt="yearly view" className="slick-image" />
-    </div>,
-    <div key={2}>
-      <img src={image3} alt="yearly view" className="slick-image" />
-    </div>,
-    <div key={3}>
-      <img src={image4} alt="yearly view" className="slick-image" />
+      <img src={image1} alt="yearly view" className="slick-image" />
     </div>
   ];
   return (
