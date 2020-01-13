@@ -59,8 +59,7 @@ export default function AboutSection() {
             title="Email"
             color="info"
             size="lg"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-            target="_blank"
+            href="mailto:lena.nguyen1@uwaterloo.ca"
           >
             <Email fontSize="large" />
           </IconButton>
@@ -71,7 +70,7 @@ export default function AboutSection() {
             title="GitHub"
             color="github"
             size="lg"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+            href="https://github.com/LenaNguyen"
             target="_blank"
           >
             <GitHub fontSize="large" />
@@ -83,7 +82,7 @@ export default function AboutSection() {
             title="LinkedIn"
             color="linkedIn"
             size="lg"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+            href="https://linkedin.com/in/nguyenlena1/"
             target="_blank"
           >
             <LinkedIn fontSize="large" />
