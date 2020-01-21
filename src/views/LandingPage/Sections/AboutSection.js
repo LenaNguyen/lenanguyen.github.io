@@ -20,6 +20,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 import IconButton from "components/IconButton/IconButton.js";
+import ResumePdf from "assets/Resume.pdf";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/aboutStyle.js";
 
@@ -47,7 +48,7 @@ export default function AboutSection() {
             id="resume"
             title="Resume"
             color="rose"
-            href="assets/Resume.pdf"
+            href={ResumePdf}
             target="_blank"
           >
             <Resume fontSize="large" />
