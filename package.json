@@ -3,7 +3,7 @@
   "version": "1.8.0",
   "description": "Personal Website",
   "private": true,
-  "homepage": "https://lenanguyen.github.io/",
+  "homepage": "https://lenanguyen.github.io/portfolio",
   "main": "dist/index.js",
   "dependencies": {
     "@material-ui/core": "4.8.2",
@@ -41,6 +41,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint:check": "eslint . --ext=js,jsx;  exit 0",
     "lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
