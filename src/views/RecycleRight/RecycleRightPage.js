@@ -3,7 +3,6 @@ import React from "react";
 import ProjectTemplate from "views/Templates/ProjectTemplate.js";
 import video1 from "assets/video/projects/recycleRight/recycleRight1-min.mp4";
 import video2 from "assets/video/projects/recycleRight/recycleRight2-min.mp4";
-import image3 from "assets/img/projects/travelwise/travelwise4.jpg";
 
 export default function RecycleRightPage() {
   const description = `Recycle Right is a mobile waste classifying app that allows users to take a picture of an item,

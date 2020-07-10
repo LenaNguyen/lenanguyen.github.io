@@ -20,6 +20,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 import IconButton from "components/IconButton/IconButton.js";
+import ResumePdf from "assets/Resume.pdf";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/aboutStyle.js";
 
@@ -47,7 +48,7 @@ export default function AboutSection() {
             id="resume"
             title="Resume"
             color="rose"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+            href={ResumePdf}
             target="_blank"
           >
             <Resume fontSize="large" />
@@ -59,8 +60,7 @@ export default function AboutSection() {
             title="Email"
             color="info"
             size="lg"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-            target="_blank"
+            href="mailto:lena.nguyen1@uwaterloo.ca"
           >
             <Email fontSize="large" />
           </IconButton>
@@ -71,7 +71,7 @@ export default function AboutSection() {
             title="GitHub"
             color="github"
             size="lg"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+            href="https://github.com/LenaNguyen"
             target="_blank"
           >
             <GitHub fontSize="large" />
@@ -83,7 +83,7 @@ export default function AboutSection() {
             title="LinkedIn"
             color="linkedIn"
             size="lg"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+            href="https://linkedin.com/in/nguyenlena1/"
             target="_blank"
           >
             <LinkedIn fontSize="large" />
