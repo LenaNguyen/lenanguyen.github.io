@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import "assets/scss/material-kit-react.scss?v=1.8.0";
 import Header from "components/Header/Header.js";
@@ -20,7 +20,7 @@ import WaterlooRushPage from "views/WaterlooRushPage/WaterlooRushPage";
 var hist = createBrowserHistory();
 
 ReactDOM.render(
-  <Router history={hist}>
+  <HashRouter basename={"/"} history={hist}>
     <Switch>
       <Header
         color="transparent"
@@ -29,7 +29,7 @@ ReactDOM.render(
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "dark"
+          color: "dark",
         }}
       />
     </Switch>
@@ -43,6 +43,6 @@ ReactDOM.render(
       <Route path="/projects/waterlooRush" component={WaterlooRushPage} />
       <Route path="/" component={LandingPage} />
     </Switch>
-  </Router>,
+  </HashRouter>,
   document.getElementById("root")
 );
