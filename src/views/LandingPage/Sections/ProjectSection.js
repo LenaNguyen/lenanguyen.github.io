@@ -27,143 +27,99 @@ const useStyles = makeStyles(styles);
 export default function ProjectSection() {
   const classes = useStyles();
   const imageClasses = classNames(classes.imgRaised, classes.imgFluid);
+
+  const projectCard = ({
+    xs,
+    sm,
+    md,
+    description,
+    title,
+    image,
+    imageAlt,
+    projectLink,
+  }) => {
+    return (
+      <GridItem xs={xs || 12} sm={sm || 12} md={md || 4}>
+        <img src={image} alt={imageAlt} className={imageClasses} />
+        <div className={classes.imgCardOverlay}>
+          <h3 className={classes.overlayTitle}>{title}</h3>
+          <p className={classes.overlayTitle}>{description}</p>
+          <Button color="info" size="sm" to={projectLink} component={Link}>
+            Learn More
+          </Button>
+        </div>
+      </GridItem>
+    );
+  };
+
   return (
     <div className={classes.section}>
       <h2 className={classes.title}>Projects</h2>
       <div>
         <GridContainer spacing={3}>
-          <GridItem xs={12} sm={12} md={4}>
-            <img src={smartbrain} alt="Smartbrain" className={imageClasses} />
-            <div className={classes.imgCardOverlay}>
-              <h3 className={classes.overlayTitle}>Smartbrain</h3>
-              <p className={classes.overlayTitle}>
-                A full stack application which detects human faces in photos.
-              </p>
-              <Button
-                color="info"
-                size="sm"
-                to="/projects/smartbrain"
-                component={Link}
-              >
-                Learn More
-              </Button>
-            </div>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={8}>
-            <img src={myndset} alt="Myndset" className={imageClasses} />
-            <div className={classes.imgCardOverlay}>
-              <h3 className={classes.overlayTitle}>Myndset</h3>
-              <p className={classes.overlayTitle}>
-                A digital mood journal that predicts your emotions.
-              </p>
-              <Button
-                color="info"
-                size="sm"
-                to="/projects/myndset"
-                component={Link}
-              >
-                Learn More
-              </Button>
-            </div>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
-            <img src={dancefest} alt="Dancefest" className={imageClasses} />
-            <div className={classes.imgCardOverlay}>
-              <h3 className={classes.overlayTitle}>Dancefest</h3>
-              <p className={classes.overlayTitle}>
-                An admin portal which manages the adjudications for the Ontario
-                Dancefest
-              </p>
-              <Button
-                color="info"
-                size="sm"
-                to="/projects/dancefest"
-                component={Link}
-              >
-                Learn More
-              </Button>
-            </div>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
-            <img src={travelwise} alt="Travelwise" className={imageClasses} />
-            <div className={classes.imgCardOverlay}>
-              <h3 className={classes.overlayTitle}>Travelwise</h3>
-              <p className={classes.overlayTitle}>
-                A web app that keeps track of points, news, and documents
-                between companies participating in the sustainable
-                transportation initiative.
-              </p>
-              <Button
-                color="info"
-                size="sm"
-                to="/projects/travelwise"
-                component={Link}
-              >
-                Learn More
-              </Button>
-            </div>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <img src={safenet} alt="Safe.net" className={imageClasses} />
-            <div className={classes.imgCardOverlay}>
-              <h3 className={classes.overlayTitle}>Safe.net</h3>
-              <p className={classes.overlayTitle}>
-                A chrome extension that protects children browsing the internet.
-              </p>
-              <Button
-                color="info"
-                size="sm"
-                to="/projects/safenet"
-                component={Link}
-              >
-                Learn More
-              </Button>
-            </div>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <img
-              src={recycleRight}
-              alt="Recycle Right"
-              className={imageClasses}
-            />
-            <div className={classes.imgCardOverlay}>
-              <h3 className={classes.overlayTitle}>Recycle Right</h3>
-              <p className={classes.overlayTitle}>
-                A mobile app that identifies if an item is recycling, compost,
-                or landfill.
-              </p>
-              <Button
-                color="info"
-                size="sm"
-                to="/projects/recycleRight"
-                component={Link}
-              >
-                Learn More
-              </Button>
-            </div>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <img
-              src={waterlooRush}
-              alt="Waterloo Rush"
-              className={imageClasses}
-            />
-            <div className={classes.imgCardOverlay}>
-              <h3 className={classes.overlayTitle}>Waterloo Rush</h3>
-              <p className={classes.overlayTitle}>
-                An inifnite runner game that follows a student through the
-                hectic hallways of the University of Waterloo.
-              </p>
-              <Button
-                color="info"
-                size="sm"
-                to="/projects/waterlooRush"
-                component={Link}
-              >
-                Learn More
-              </Button>
-            </div>
-          </GridItem>
+          {projectCard({
+            description:
+              "A chrome extension that protects children browsing the internet.",
+            title: "Safe.net",
+            image: safenet,
+            imageAlt: "Safe.net",
+            projectLink: "/projects/safenet",
+          })}
+          {projectCard({
+            description:
+              "A web app that keeps track of points, news, and documents\
+			  between companies participating in the sustainable\
+			  transportation initiative.",
+            title: "Travelwise",
+            image: travelwise,
+            imageAlt: "Travelwise",
+            projectLink: "/projects/travelwise",
+          })}
+          {projectCard({
+            description:
+              "A full stack application which detects human faces in photos.",
+            title: "Smartbrain",
+            image: smartbrain,
+            imageAlt: "smartbrain",
+            projectLink: "/projects/smartbrain",
+          })}
+          {projectCard({
+            description:
+              "An admin portal which manages the adjudications for the Ontario",
+            title: "Dancefest",
+            image: dancefest,
+            imageAlt: "Dancefest",
+            projectLink: "/projects/dancefest",
+            md: 6,
+          })}
+          {projectCard({
+            description: "A digital mood journal that predicts your emotions.",
+            title: "Myndset",
+            image: myndset,
+            imageAlt: "Myndset",
+            projectLink: "/projects/myndset",
+            md: 6,
+          })}
+          {projectCard({
+            description:
+              "A mobile app that identifies if an item is recycling, compost,\
+			  or landfill.",
+            title: "Recycle Right",
+            image: recycleRight,
+            imageAlt: "Recycle Right",
+            projectLink: "/projects/recycleRight",
+            md: 6,
+          })}
+          {projectCard({
+            description:
+              "An inifnite runner game that follows a student through the\
+			  hectic hallways of the University of Waterloo.",
+            title: "Waterloo Rush",
+            image: waterlooRush,
+            imageAlt: "Waterloo Rush",
+            projectLink: "/projects/waterlooRush",
+            md: 6,
+          })}
         </GridContainer>
       </div>
     </div>

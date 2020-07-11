@@ -2,6 +2,10 @@ import React from "react";
 import ProjectTemplate from "views/Templates/ProjectTemplate.js";
 import image1 from "assets/img/projects/safenet/safenet2.jpg";
 import video1 from "assets/video/projects/safenet/safenet1.mp4";
+import newsImage1 from "assets/img/projects/safenet/safenet-article-1-min.jpg";
+import newsImage2 from "assets/img/projects/safenet/safenet-article-2-min.jpg";
+import Emoji from "components/Emoji/Emoji";
+import { Link } from "@material-ui/core";
 
 export default function SafenetPage() {
   const description = `Safe.net aims to increase the security of children on the internet. 
@@ -27,7 +31,7 @@ export default function SafenetPage() {
     </div>,
     <div key={4}>
       <img src={image1} alt="yearly view" className="slick-image" />
-    </div>
+    </div>,
   ];
   return (
     <ProjectTemplate
@@ -37,6 +41,36 @@ export default function SafenetPage() {
       description={description}
       techStack={techStack}
       mediaList={mediaList}
-    />
+    >
+      <h2>
+        <Emoji symbol="📰" label="news" /> Awards and News
+      </h2>
+      <p>
+        This project won <strong>first place overall</strong> at Citizen Hacks!
+        Check out some of the articles written about the project below.
+      </p>
+      <br />
+      <h4>
+        <Link
+          style={{ color: "#FFFFFF" }}
+          href="https://uwaterloo.ca/systems-design-engineering/news/syde-student-shared-top-prize-recent-hackathon"
+        >
+          SYDE student shared the top prize at a recent hackathon
+        </Link>
+      </h4>
+      <img src={newsImage1} alt="Article Preview" />
+      <br />
+      <br />
+      <h4>
+        <Link
+          style={{ color: "#FFFFFF" }}
+          href="https://cs.uwaterloo.ca/news/anne-chung-lena-nguyen-win-first-place-citizen-hacks"
+        >
+          Second-year CS student Anne Chung and her teammate Lena Nguyen win
+          privacy-themed Citizen Hacks competition
+        </Link>
+      </h4>
+      <img src={newsImage2} alt="Article Preview" />
+    </ProjectTemplate>
   );
 }

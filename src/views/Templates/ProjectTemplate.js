@@ -8,16 +8,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import GitHub from "@material-ui/icons/GitHub";
 
 // core components
-import Header from "components/Header/Header.js";
-
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import IconButton from "components/IconButton/IconButton.js";
 import Card from "components/Card/Card.js";
 
 import styles from "assets/jss/material-kit-react/views/templates/projectTemplate.js";
+import Emoji from "components/Emoji/Emoji";
 
 const useStyles = makeStyles(styles);
 
@@ -30,7 +28,7 @@ export default function ProjectTemplate(props) {
     description,
     techStack,
     mediaList,
-    children
+    children,
   } = props;
 
   const settings = {
@@ -40,7 +38,7 @@ export default function ProjectTemplate(props) {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    arrows: false
+    arrows: false,
   };
 
   return (
@@ -75,7 +73,9 @@ export default function ProjectTemplate(props) {
             >
               <p>{description}</p>
               <br />
-              <h2>Tech Stack</h2>
+              <h2>
+                <Emoji symbol="💻" label="laptop icon" /> Tech Stack
+              </h2>
               <p>{techStack}</p>
             </div>
           </div>
