@@ -29,7 +29,7 @@ ReactDOM.render(
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "dark",
+          color: "dark"
         }}
       />
     </Switch>

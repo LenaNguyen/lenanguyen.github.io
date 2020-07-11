@@ -29,7 +29,7 @@ export default function DancefestPage() {
     </div>,
     <div key={2}>
       <img src={image2} alt="Performance Filters" className="slick-image" />
-    </div>
+    </div>,
   ];
   return (
     <ProjectTemplate
@@ -45,7 +45,7 @@ export default function DancefestPage() {
       <p>
         I transitioned the application from using a NoSQL database to a SQL
         database to reduce the complexities of queries and improve performance.
-        This invovled designing a new relational database schema, developing new
+        This involved designing a new relational database schema, developing new
         RESTful apis in Flask, and rerouting the front end.
       </p>
       <h3>Awards Considerations Feature</h3>

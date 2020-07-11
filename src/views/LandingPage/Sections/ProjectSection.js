@@ -20,6 +20,7 @@ import smartbrain from "assets/img/projects/smartbrain/smartbrain1-min.jpg";
 import recycleRight from "assets/img/projects/recycleRight/recycleRight1-min.jpg";
 import waterlooRush from "assets/img/projects/waterlooRush/waterlooRush1-min.jpg";
 import travelwise from "assets/img/projects/travelwise/travelwise1-min.jpg";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(styles);
 
@@ -38,7 +39,12 @@ export default function ProjectSection() {
               <p className={classes.overlayTitle}>
                 A full stack application which detects human faces in photos.
               </p>
-              <Button color="info" size="sm" href="/projects/smartbrain">
+              <Button
+                color="info"
+                size="sm"
+                to="/projects/smartbrain"
+                component={Link}
+              >
                 Learn More
               </Button>
             </div>
@@ -50,7 +56,12 @@ export default function ProjectSection() {
               <p className={classes.overlayTitle}>
                 A digital mood journal that predicts your emotions.
               </p>
-              <Button color="info" size="sm" href="/projects/myndset">
+              <Button
+                color="info"
+                size="sm"
+                to="/projects/myndset"
+                component={Link}
+              >
                 Learn More
               </Button>
             </div>
@@ -63,7 +74,12 @@ export default function ProjectSection() {
                 An admin portal which manages the adjudications for the Ontario
                 Dancefest
               </p>
-              <Button color="info" size="sm" href="/projects/dancefest">
+              <Button
+                color="info"
+                size="sm"
+                to="/projects/dancefest"
+                component={Link}
+              >
                 Learn More
               </Button>
             </div>
@@ -77,7 +93,12 @@ export default function ProjectSection() {
                 between companies participating in the sustainable
                 transportation initiative.
               </p>
-              <Button color="info" size="sm" href="/projects/travelwise">
+              <Button
+                color="info"
+                size="sm"
+                to="/projects/travelwise"
+                component={Link}
+              >
                 Learn More
               </Button>
             </div>
@@ -89,7 +110,12 @@ export default function ProjectSection() {
               <p className={classes.overlayTitle}>
                 A chrome extension that protects children browsing the internet.
               </p>
-              <Button color="info" size="sm" href="/projects/safenet">
+              <Button
+                color="info"
+                size="sm"
+                to="/projects/safenet"
+                component={Link}
+              >
                 Learn More
               </Button>
             </div>
@@ -106,7 +132,12 @@ export default function ProjectSection() {
                 A mobile app that identifies if an item is recycling, compost,
                 or landfill.
               </p>
-              <Button color="info" size="sm" href="/projects/recycleRight">
+              <Button
+                color="info"
+                size="sm"
+                to="/projects/recycleRight"
+                component={Link}
+              >
                 Learn More
               </Button>
             </div>
@@ -123,7 +154,12 @@ export default function ProjectSection() {
                 An inifnite runner game that follows a student through the
                 hectic hallways of the University of Waterloo.
               </p>
-              <Button color="info" size="sm" href="/projects/waterlooRush">
+              <Button
+                color="info"
+                size="sm"
+                to="/projects/waterlooRush"
+                component={Link}
+              >
                 Learn More
               </Button>
             </div>
