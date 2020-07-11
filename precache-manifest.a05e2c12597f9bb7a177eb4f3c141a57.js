@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9502a48fdf5076be4413a658b3a4867b",
+    "revision": "d274fc6170c37f69c452aa0a07e30eae",
     "url": "/index.html"
   },
   {
-    "revision": "65ba3eb8707858783ac9",
+    "revision": "03c8d86caff0bf506900",
     "url": "/static/css/main.b00d8cb1.chunk.css"
   },
   {
-    "revision": "b80ea2bf7228cb87a7aa",
-    "url": "/static/js/2.30a6c1cc.chunk.js"
+    "revision": "d2dd36c915ba0cdbefc6",
+    "url": "/static/js/2.e2e5cde7.chunk.js"
   },
   {
-    "revision": "65ba3eb8707858783ac9",
-    "url": "/static/js/main.5fd09042.chunk.js"
+    "revision": "03c8d86caff0bf506900",
+    "url": "/static/js/main.531d11bf.chunk.js"
   },
   {
     "revision": "76e213e69982b0e810ee",
@@ -86,6 +86,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d4ca7ba87dc0fcb728c16d22dd9f5403",
     "url": "/static/media/recycleRight2-min.d4ca7ba8.mp4"
+  },
+  {
+    "revision": "a35482e02038b14ec0b6410a4b3b7317",
+    "url": "/static/media/safenet-article-1-min.a35482e0.jpg"
+  },
+  {
+    "revision": "b7246f20bf94b2839074cb7dbb566f0d",
+    "url": "/static/media/safenet-article-2-min.b7246f20.jpg"
   },
   {
     "revision": "b0f032f6491dbe58b59ece64b89973c9",
