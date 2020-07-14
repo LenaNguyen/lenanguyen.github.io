@@ -37,7 +37,7 @@ export default function ProjectSection() {
     title,
     image,
     imageAlt,
-    projectLink,
+    projectLink
   }) => {
     return (
       <GridItem xs={xs || 12} sm={sm || 12} md={md || 6}>
@@ -70,7 +70,7 @@ export default function ProjectSection() {
             title: "Safe.net",
             image: safenet,
             imageAlt: "Safe.net",
-            projectLink: "/projects/safenet",
+            projectLink: "/projects/safenet"
           })}
           {projectCard({
             description:
@@ -80,7 +80,7 @@ export default function ProjectSection() {
             title: "Travelwise",
             image: travelwise,
             imageAlt: "Travelwise",
-            projectLink: "/projects/travelwise",
+            projectLink: "/projects/travelwise"
           })}
           {projectCard({
             description:
@@ -89,7 +89,7 @@ export default function ProjectSection() {
             title: "Autonomous Car AI",
             image: carAI,
             imageAlt: "Autonomous Car AI",
-            projectLink: "/projects/carAI",
+            projectLink: "/projects/carAI"
           })}
           {projectCard({
             description:
@@ -97,7 +97,7 @@ export default function ProjectSection() {
             title: "Smartbrain",
             image: smartbrain,
             imageAlt: "smartbrain",
-            projectLink: "/projects/smartbrain",
+            projectLink: "/projects/smartbrain"
           })}
           {projectCard({
             description:
@@ -105,14 +105,14 @@ export default function ProjectSection() {
             title: "Dancefest",
             image: dancefest,
             imageAlt: "Dancefest",
-            projectLink: "/projects/dancefest",
+            projectLink: "/projects/dancefest"
           })}
           {projectCard({
             description: "A digital mood journal that predicts your emotions.",
             title: "Myndset",
             image: myndset,
             imageAlt: "Myndset",
-            projectLink: "/projects/myndset",
+            projectLink: "/projects/myndset"
           })}
           {projectCard({
             description:
@@ -121,7 +121,7 @@ export default function ProjectSection() {
             title: "Waterloo Rush",
             image: waterlooRush,
             imageAlt: "Waterloo Rush",
-            projectLink: "/projects/waterlooRush",
+            projectLink: "/projects/waterlooRush"
           })}
           {projectCard({
             description:
@@ -130,7 +130,7 @@ export default function ProjectSection() {
             title: "Recycle Right",
             image: recycleRight,
             imageAlt: "Recycle Right",
-            projectLink: "/projects/recycleRight",
+            projectLink: "/projects/recycleRight"
           })}
         </GridContainer>
       </div>
