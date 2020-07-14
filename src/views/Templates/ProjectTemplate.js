@@ -71,7 +71,7 @@ export default function ProjectTemplate(props) {
             <div
               className={classNames(classes.description, classes.centerText)}
             >
-              <p>{description}</p>
+              <p style={{ textAlign: "left" }}>{description}</p>
               <br />
               <h2>
                 <Emoji symbol="💻" label="laptop icon" /> Tech Stack

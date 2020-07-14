@@ -4,8 +4,8 @@ import image1 from "assets/img/projects/myndset/myndset2-min.jpg";
 import image2 from "assets/img/projects/myndset/myndset3-min.jpg";
 
 export default function MyndsetPage() {
-  const description = ` Myndset is a digital mood journal that integrates with your
-	Google Home or Amazon Alexa. When a users says the command for
+  const description = `Myndset is a digital mood journal that integrates with your
+	Google Home or Amazon Alexa. When a user says the command for
 	opening Myndset on their IoT device, the device will initiate a
 	conversation with the user about their day. From that
 	conversation, the program will predict the user's mood and

@@ -20,6 +20,7 @@ import smartbrain from "assets/img/projects/smartbrain/smartbrain1-min.jpg";
 import recycleRight from "assets/img/projects/recycleRight/recycleRight1-min.jpg";
 import waterlooRush from "assets/img/projects/waterlooRush/waterlooRush1-min.jpg";
 import travelwise from "assets/img/projects/travelwise/travelwise1-min.jpg";
+import carAI from "assets/img/projects/carAI/carAI1-min.jpg";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(styles);
@@ -39,12 +40,18 @@ export default function ProjectSection() {
     projectLink,
   }) => {
     return (
-      <GridItem xs={xs || 12} sm={sm || 12} md={md || 4}>
+      <GridItem xs={xs || 12} sm={sm || 12} md={md || 6}>
         <img src={image} alt={imageAlt} className={imageClasses} />
         <div className={classes.imgCardOverlay}>
           <h3 className={classes.overlayTitle}>{title}</h3>
           <p className={classes.overlayTitle}>{description}</p>
-          <Button color="info" size="sm" to={projectLink} component={Link}>
+          <Button
+            style={{ marginTop: "1rem" }}
+            color="info"
+            size="sm"
+            to={projectLink}
+            component={Link}
+          >
             Learn More
           </Button>
         </div>
@@ -77,6 +84,15 @@ export default function ProjectSection() {
           })}
           {projectCard({
             description:
+              "An autonomous car AI that predicts the next steering angle of the car, \
+			  given its current position on the road.",
+            title: "Autonomous Car AI",
+            image: carAI,
+            imageAlt: "Autonomous Car AI",
+            projectLink: "/projects/carAI",
+          })}
+          {projectCard({
+            description:
               "A full stack application which detects human faces in photos.",
             title: "Smartbrain",
             image: smartbrain,
@@ -90,7 +106,6 @@ export default function ProjectSection() {
             image: dancefest,
             imageAlt: "Dancefest",
             projectLink: "/projects/dancefest",
-            md: 6,
           })}
           {projectCard({
             description: "A digital mood journal that predicts your emotions.",
@@ -98,17 +113,6 @@ export default function ProjectSection() {
             image: myndset,
             imageAlt: "Myndset",
             projectLink: "/projects/myndset",
-            md: 6,
-          })}
-          {projectCard({
-            description:
-              "A mobile app that identifies if an item is recycling, compost,\
-			  or landfill.",
-            title: "Recycle Right",
-            image: recycleRight,
-            imageAlt: "Recycle Right",
-            projectLink: "/projects/recycleRight",
-            md: 6,
           })}
           {projectCard({
             description:
@@ -118,7 +122,15 @@ export default function ProjectSection() {
             image: waterlooRush,
             imageAlt: "Waterloo Rush",
             projectLink: "/projects/waterlooRush",
-            md: 6,
+          })}
+          {projectCard({
+            description:
+              "A mobile app that identifies if an item is recycling, compost,\
+			  or landfill.",
+            title: "Recycle Right",
+            image: recycleRight,
+            imageAlt: "Recycle Right",
+            projectLink: "/projects/recycleRight",
           })}
         </GridContainer>
       </div>

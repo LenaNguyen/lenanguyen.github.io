@@ -10,7 +10,7 @@ import {
   Code,
   Settings,
   Email,
-  AssignmentInd as Resume
+  AssignmentInd as Resume,
 } from "@material-ui/icons";
 
 import GitHub from "@material-ui/icons/GitHub";
@@ -20,7 +20,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 import IconButton from "components/IconButton/IconButton.js";
-import ResumePdf from "assets/Resume.pdf";
+import ResumePdf from "assets/Lena-Nguyen-Resume.pdf";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/aboutStyle.js";
 

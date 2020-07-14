@@ -16,11 +16,14 @@ import DancefestPage from "views/DancefestPage/DancefestPage";
 import TravelwisePage from "views/TravelwisePage/TravelwisePage";
 import RecycleRightPage from "views/RecycleRight/RecycleRightPage";
 import WaterlooRushPage from "views/WaterlooRushPage/WaterlooRushPage";
+import ScrollToTop from "components/ScrollToTop/ScrollToTop";
+import CarAIPage from "./views/CarAIPage/CarAIPage";
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <HashRouter basename={"/"} history={hist}>
+    <ScrollToTop />
     <Switch>
       <Header
         color="transparent"
@@ -29,7 +32,7 @@ ReactDOM.render(
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "dark"
+          color: "dark",
         }}
       />
     </Switch>
@@ -41,6 +44,7 @@ ReactDOM.render(
       <Route path="/projects/travelwise" component={TravelwisePage} />
       <Route path="/projects/recycleRight" component={RecycleRightPage} />
       <Route path="/projects/waterlooRush" component={WaterlooRushPage} />
+      <Route path="/projects/carAI" component={CarAIPage} />
       <Route path="/" component={LandingPage} />
     </Switch>
   </HashRouter>,

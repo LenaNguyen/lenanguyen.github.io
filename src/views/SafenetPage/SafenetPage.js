@@ -6,8 +6,14 @@ import newsImage1 from "assets/img/projects/safenet/safenet-article-1-min.jpg";
 import newsImage2 from "assets/img/projects/safenet/safenet-article-2-min.jpg";
 import Emoji from "components/Emoji/Emoji";
 import { Link } from "@material-ui/core";
+import styles from "assets/jss/material-kit-react/views/templates/projectTemplate.js";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles(styles);
 
 export default function SafenetPage() {
+  const classes = useStyles();
+
   const description = `Safe.net aims to increase the security of children on the internet. 
   It consists of a chrome extension which detects input fields asking for sensistive information, 
   such as your address or credit card number, and then disables the input field so that 
@@ -31,7 +37,7 @@ export default function SafenetPage() {
     </div>,
     <div key={4}>
       <img src={image1} alt="yearly view" className="slick-image" />
-    </div>,
+    </div>
   ];
   return (
     <ProjectTemplate
@@ -42,7 +48,7 @@ export default function SafenetPage() {
       techStack={techStack}
       mediaList={mediaList}
     >
-      <h2>
+      <h2 className={classes.centerText}>
         <Emoji symbol="📰" label="news" /> Awards and News
       </h2>
       <p>
