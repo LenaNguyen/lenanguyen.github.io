@@ -33,10 +33,11 @@ export default function LandingPage() {
                 Hey there! I&apos;m Lena.
               </h1>
               <h4>
-                Thanks for checking out my website! I am a software developer,
-                currently studying Systems Design Engineering at the University
-                of Waterloo. Here, you can learn more about my skills and past
-                projects. Feel free to look around.
+                Thanks for checking out my website! I am currently studying
+                Systems Design Engineering at the University of Waterloo. I have
+                an interest for technology and entrepreneurship. Here, you can
+                learn more about my skills and past projects. Feel free to look
+                around.
               </h4>
               <br />
               <Button color="rose" size="lg" to="/#about" component={Link}>
