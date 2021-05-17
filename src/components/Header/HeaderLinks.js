@@ -28,7 +28,7 @@ export default function HeaderLinks() {
           buttonText="Projects"
           buttonProps={{
             className: classes.navLink,
-            color: "transparent"
+            color: "transparent",
           }}
           buttonIcon={Apps}
           dropdownList={[
@@ -37,6 +37,9 @@ export default function HeaderLinks() {
             </Link>,
             <Link to="/projects/myndset" className={classes.dropdownLink}>
               Myndset
+            </Link>,
+            <Link to="/projects/carAI" className={classes.dropdownLink}>
+              Autonomous Car AI
             </Link>,
             <Link to="/projects/recycleRight" className={classes.dropdownLink}>
               Recycle Right
@@ -52,7 +55,7 @@ export default function HeaderLinks() {
             </Link>,
             <Link to="/projects/waterlooRush" className={classes.dropdownLink}>
               Waterloo Rush
-            </Link>
+            </Link>,
           ]}
         />
       </ListItem>

@@ -11,6 +11,7 @@ import {
   Settings,
   Email,
   AssignmentInd as Resume,
+  Build,
 } from "@material-ui/icons";
 
 import GitHub from "@material-ui/icons/GitHub";
@@ -91,18 +92,21 @@ export default function AboutSection() {
         </GridItem>
       </GridContainer>
       <div>
-        <GridContainer>
-          <GridItem xs={12} sm={6} md={3}>
+        <GridContainer container justify="center">
+          <GridItem xs={12} sm={6} md={2}>
             <InfoArea title="Languages" icon={Code} iconColor="info" vertical>
               <ul className={classes.simpleList}>
-                <li>Javascript</li>
-                <li>Python</li>
+                <li>Ruby</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
                 <li>C++</li>
-                <li>C#</li>
+                <li>GraphQL</li>
+                <li>Python</li>
+                <li>SQL</li>
               </ul>
             </InfoArea>
           </GridItem>
-          <GridItem xs={12} sm={6} md={3}>
+          <GridItem xs={12} sm={6} md={2}>
             <InfoArea
               title="Back End"
               icon={Settings}
@@ -110,17 +114,18 @@ export default function AboutSection() {
               vertical
             >
               <ul className={classes.simpleList}>
+                <li>Rails</li>
                 <li>Node.js</li>
                 <li>Express.js</li>
+                <li>Flask</li>
                 <li>Hapi.js</li>
                 <li>.NET</li>
-                <li>Flask</li>
               </ul>
             </InfoArea>
           </GridItem>
-          <GridItem xs={12} sm={6} md={3}>
+          <GridItem xs={12} sm={6} md={2}>
             <InfoArea
-              title="Databases"
+              title="Data Storage"
               icon={Storage}
               iconColor="info"
               vertical
@@ -129,11 +134,28 @@ export default function AboutSection() {
                 <li>MySql</li>
                 <li>PostgreSQL</li>
                 <li>MS SQL Server</li>
-                <li>Firestore</li>
+                <li>S3</li>
+                <li>Redis</li>
               </ul>
             </InfoArea>
           </GridItem>
-          <GridItem xs={12} sm={6} md={3}>
+          <GridItem xs={12} sm={6} md={2}>
+            <InfoArea
+              title="DevOps &amp; Tools"
+              icon={Build}
+              iconColor="info"
+              vertical
+            >
+              <ul className={classes.simpleList}>
+                <li>AWS</li>
+                <li>Docker</li>
+                <li>StatsD</li>
+                <li>Prometheus</li>
+                <li>Git</li>
+              </ul>
+            </InfoArea>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={2}>
             <InfoArea
               title="Front End"
               icon={ImportantDevices}
@@ -143,7 +165,6 @@ export default function AboutSection() {
               <ul className={classes.simpleList}>
                 <li>React</li>
                 <li>React Native</li>
-                <li>GraphQL</li>
                 <li>HTML5</li>
                 <li>CSS3</li>
               </ul>
