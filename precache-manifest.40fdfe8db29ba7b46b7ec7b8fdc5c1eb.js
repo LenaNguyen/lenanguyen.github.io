@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6449a99edb3a46c86c1b947b6694fa67",
+    "revision": "ba2526d2466c5ad3a3845057b4a13ed7",
     "url": "/index.html"
   },
   {
-    "revision": "93a2573c10f37e5761d1",
+    "revision": "eb5b536f9cc3148f89f2",
     "url": "/static/css/main.b00d8cb1.chunk.css"
   },
   {
-    "revision": "1f73062cee26c8b7bd59",
-    "url": "/static/js/2.76199d00.chunk.js"
+    "revision": "7c72e3b481356a29addd",
+    "url": "/static/js/2.f62fb063.chunk.js"
   },
   {
-    "revision": "93a2573c10f37e5761d1",
-    "url": "/static/js/main.6fdeed1c.chunk.js"
+    "revision": "eb5b536f9cc3148f89f2",
+    "url": "/static/js/main.1bd2f720.chunk.js"
   },
   {
     "revision": "76e213e69982b0e810ee",
     "url": "/static/js/runtime~main.0b9ad6d4.js"
   },
   {
-    "revision": "7269439df3fedb72ae2522f4205fe26f",
-    "url": "/static/media/Lena-Nguyen-Resume.7269439d.pdf"
+    "revision": "730f24c4154ee7aec72b1ec178686883",
+    "url": "/static/media/Lena-Nguyen-Resume.730f24c4.pdf"
   },
   {
     "revision": "6fa8e36c5c6db51cdcb467bda149efdc",
