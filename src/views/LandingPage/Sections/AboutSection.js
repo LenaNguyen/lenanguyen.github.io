@@ -38,7 +38,7 @@ export default function AboutSection() {
             Stemming from my curiosity of technology, I enjoy exploring how it
             is used by people to connect, optimize, and amaze the world. Working
             as a software developer has allowed me to be a part of leveraging
-            today’s technology to help improve lives.
+            today’s technology to build cool projects.
           </h5>
         </GridItem>
       </GridContainer>
@@ -97,8 +97,10 @@ export default function AboutSection() {
             <InfoArea title="Languages" icon={Code} iconColor="info" vertical>
               <ul className={classes.simpleList}>
                 <li>Ruby</li>
+                <li>Kotlin</li>
                 <li>JavaScript</li>
                 <li>TypeScript</li>
+                <li>PHP</li>
                 <li>C++</li>
                 <li>GraphQL</li>
                 <li>Python</li>
@@ -118,7 +120,6 @@ export default function AboutSection() {
                 <li>Node.js</li>
                 <li>Express.js</li>
                 <li>Flask</li>
-                <li>Hapi.js</li>
                 <li>.NET</li>
               </ul>
             </InfoArea>
