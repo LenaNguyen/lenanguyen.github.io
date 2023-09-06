@@ -61,7 +61,7 @@ export default function AboutSection() {
             title="Email"
             color="info"
             size="lg"
-            href="mailto:lena.nguyen1@uwaterloo.ca"
+            href="mailto:lena.ln.nguyen@gmail.com"
           >
             <Email fontSize="large" />
           </IconButton>
@@ -134,8 +134,8 @@ export default function AboutSection() {
               <ul className={classes.simpleList}>
                 <li>MySql</li>
                 <li>PostgreSQL</li>
-                <li>MS SQL Server</li>
-                <li>S3</li>
+                <li>Firebase</li>
+                <li>Amazon S3</li>
                 <li>Redis</li>
               </ul>
             </InfoArea>
@@ -149,6 +149,7 @@ export default function AboutSection() {
             >
               <ul className={classes.simpleList}>
                 <li>AWS</li>
+                <l1>Elasticsearch</l1>
                 <li>Docker</li>
                 <li>StatsD</li>
                 <li>Prometheus</li>
@@ -165,7 +166,7 @@ export default function AboutSection() {
             >
               <ul className={classes.simpleList}>
                 <li>React</li>
-                <li>React Native</li>
+                <li>Redux</li>
                 <li>HTML5</li>
                 <li>CSS3</li>
               </ul>
